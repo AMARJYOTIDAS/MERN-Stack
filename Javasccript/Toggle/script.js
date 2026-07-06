@@ -4,7 +4,7 @@ let curmode = "light"//intial state
 demo.addEventListener("click",() =>{
     if(curmode === "light"){
         curmode="dark"
-        document.querySelector("body").style.backgroundColor = "blue"
+        document.querySelector("body").style.backgroundColor = "blue"-
     }
     else{
         curmode = "light"
