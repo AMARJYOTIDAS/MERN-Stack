@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex-box</title>
+    <style>
+        body{
+            margin: 200px;
+        }
+        .container {
+            display: flex;
+             border: 2px solid rgb(0, 0, 0);
+             background-color: rgb(135, 122, 217);
+            justify-content: space-between;
+            /* justify-content: center; */
+            /* justify-content: space-around; */
+            /* justify-content: space-evenly; */
+            /* align-self: auto; */
+            height: 80vh;          
+            /* flex-direction: column; */
+            /* flex-direction:column-reverse; */
+            /* flex-direction: row-reverse; */
+            /* flex-direction: row; */
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+        .item {
+            width: 100px;
+            height: 100px;
+            text-align: center;
+            margin: 20px;           
+            background-color: rgb(219, 52, 96);
+            color: white;
+            display: flex;
+            align-items:center;
+            font-size:18px;
+                  
+            /* border-radius: 100px solid black; */
+            border: 2px solid black;
+        }
+        </style>
+</head>
+<body>
+
+    <main>
+        <div class="container">
+            <div class="item">1
+                <p>this is my paragraph Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi molestiae, quibusdam porro reprehenderit sunt ducimus quam. Magnam cum nam hic ipsa quidem? Incidunt officia beatae, optio iste omnis sapiente numquam!</p>
+            </div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+            <div class="item">6</div>
+            <div class="item">7</div>
+            <div class="item">8</div>
+            <div class="item">9</div>
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+            <div class="item">6</div>
+            <div class="item">7</div>
+            <div class="item">8</div>
+            <div class="item">9</div>
+            
+            
+            
+        </div>
+    
+</body>
+</html>

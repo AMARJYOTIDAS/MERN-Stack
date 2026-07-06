@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid-layout</title>
+    <style>
+        .container{
+            display:grid;
+            /* grid-template-columns:100px 200px 300px */
+            /* grid-template-columns:5fr 3fr 1fr; */
+            /* if we want to create 3 columns with equal width then we can use repeat function */
+            grid-template-columns:repeat(3, 2fr);
+            grid-gap:10px;
+            grid-auto-rows:minmax(100px,auto);
+            /* grid-auto-columns:minmax( 50px,auto);  */
+
+
+            
+        }
+        .items{
+            /* width: 100px; */
+            /* height: 100px; */
+            background-color: rgb(178, 171, 173);
+            /* color: white; */
+            /* display: flex; */
+            /* align-items:center; */
+            font-size: 24px;
+            border-radius: 10px;
+            padding: 10px;
+            border: 2px solid black;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="items">lorem ipsum dolor sit amet Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt voluptatum soluta minus. Ipsum deserunt vero commodi dolor consectetur, maxime ea? Eos tempora ab voluptatum iusto minima rem recusandae illum tempore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro unde perspiciatis provident pariatur tempore aliquam modi, vitae sunt? Blanditiis, voluptate quia? Possimus, officiis accusamus? Atque rem sit voluptates! Sunt, </div>
+        <div class="items">box 2</div>
+        <div class="items">  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt voluptatum soluta minus. Ipsum deserunt vero commodi dolor consectetur, maxime ea? Eos tempora ab voluptatum iusto minima rem recusandae illum tempore.</div>
+        <div class="items">box 4</div>
+        <div class="items">box 5</div>
+        <div class="items">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis debitis esse dolorum eos incidunt excepturi culpa omnis sed quae consequuntur delectus praesentium ducimus commodi corporis et adipisci, corrupti nulla. Iste?
+        Numquam ullam dolor, sed nobis molestiae eius odit commodi eveniet dignissimos rem, placeat illum laboriosam incidunt impedit excepturi cum. Ullam pariatur aperiam molestiae ad labore ea, odit libero voluptatibus dignissimos.
+        Nihil quisquam inventore corporis ipsa, cumque architecto? Voluptatum pariatur molestiae consequuntur iste consequatur vero perspiciatis mollitia accusamus ipsam repellendus velit numquam veniam quod, fugit possimus a suscipit excepturi sapiente aut.
+        Vel minus blanditiis cum, qui reprehenderit est accusamus maxime quis velit? Porro ut nisi quidem numquam! Ab, itaque. Assumenda nisi nesciunt soluta! Consequuntur, culpa. Laboriosam, eius exercitationem! Voluptatum, in iusto.</div>
+        
+    </div>
+
+    
+</body>
+</html>

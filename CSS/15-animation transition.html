@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tranition Property</title>
+    <style>
+        div{
+            height: 200px;
+            width: 200px;
+            background-color: rgb(6, 6, 252);
+            border: 2px solid rgb(8, 8, 8);
+            border-radius: 10px;
+            
+            margin: 300px;
+            transition: all;
+            transition-duration: 5s;
+            transition-timing-function: steps(4);
+            /* first slow then first transition */
+            /* transition-timing-function: ease-in; */
+            /* transition first then slow */
+            transition-timing-function: ease-out;
+            /* in one line */
+            /* transition:all 5s steps(6) 3s; */
+           
+        }
+        div:hover{
+            background-color: red;
+            color: white;
+            font-size: 5px;
+            width:30px;
+            height:300px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        this is a box this is a box
+    </div>
+    
+</body>
+</html>

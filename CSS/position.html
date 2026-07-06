@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position in Css</title>
+    <style>
+        .container{
+            display:grid;
+            height:1000px;
+            width:300px;
+            background-color: rgb(178, 171, 173);
+            margin:100px;
+            grid-template-columns:(3 2fr);
+            grid-auto-flow: row;
+        }
+        .box{
+            height:100px;
+            width:100px;
+            border: 2px solid black;
+          
+        }
+        .red{
+            background-color: red;
+            position: relative; 
+            /* relatives means opposite of abolute */
+            left: 200px;
+            top: 100px;
+
+        }
+        .green{
+            background-color: green;
+            position:absolute;
+             /* abolute means actual top or bottom */
+            bottom: 100px;
+            right: 100px;
+            left: 220px;
+
+        }
+        .blue{
+            background-color: blue;
+            position:fixed;
+            top: 100px;
+        }
+        .aqua{
+            background-color: aqua;
+            position:sticky;
+            top: 50px;
+        }
+        /* .spacer{
+            height: 300vh;
+        } */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box red">Box 
+         Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam earum impedit at laboriosam officiis eaque quam tempore sequi cum, eum libero delectus quasi, asperiores sed sapiente cupiditate est id inventore?</div>
+        <div class="box green">Box </div>
+        <div class="box blue">Box </div>
+        <div class="box aqua">box</div>
+    </div>
+</body>
+</html>

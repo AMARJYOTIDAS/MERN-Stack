@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application form</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            background-color: rgb(243, 241, 240);
+        }
+        h1{
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .container label{
+            font-size:large;
+        }
+        .container{
+            margin: auto;
+            padding-left:78px;
+            padding-top:18px;
+            padding-right:78px;
+            height: 125vh;
+            width: 100vh;
+            background-color: rgb(167, 166, 164);
+            border: 2px solid black;
+            
+        }
+         .head{
+            display: flex;
+           flex-wrap: wrap; 
+           justify-content: space-between; 
+            
+         }
+         .head input{
+             height: 48px;
+            padding: 0 14px;
+            font-size: 15px;
+            border: 1px solid #d1d1d1;
+            border-radius: 8px;
+            box-shadow: 10px black;
+            
+            /* outline: none; */
+         }
+          .head label {
+            display: block;
+            margin-bottom: 10px;
+         }
+         .name{
+            width: 48%;
+            height: 100px;
+            margin-bottom: 20px;
+           
+         }
+          #addres{
+            height:90px;
+            width: 200px;
+            background-color: rgb(148, 180, 180);
+         }
+         #details{
+            width:30em;
+            height: 10em;
+            border-radius: 20px;
+            background-color:  rgb(210, 196, 178);
+         }
+         .exp{
+            display: flex;
+            justify-content:flex-start;
+            gaP:20PX;
+         }
+         .submit{
+            display: flex;
+            flex-direction:row;
+            justify-content:flex-start;
+            gap:50px;
+            border-radius: 100px;
+         }
+         
+    </style>
+</head>
+<h1>Job Application Form</h1>
+<body>
+    <div class="container">
+      
+        <form class="form">
+          <div class="head">
+             <div class="name">
+             <label for="firstname">Firstname</label>
+             <input type="text" name="firstname" id="firstname" placeholder="xxxxx">
+             </div>
+            
+             <div class="name">
+        
+                 <label for="lastname">Last name</label>
+                 <input type="text" name="lastname" id="lastname" placeholder="xxx">
+            </div>
+            <div class="name">
+             <label for="email" >Email Id</label>
+             <input type="email" id="email" name="email" placeholder="abc@gmail.com">
+             </div>
+            
+             <div class="name">
+             <label for="number">Phone number</label>
+             <input type="tel" id="number" placeholder="123-123-1234" pattern="{3}[0-9],{3}[0-9],{3}[0-9]">
+             </div>
+            
+             <div class="name">
+             <label for="addres">addres</label>
+             <textarea id="addres">address</textarea>
+             <!-- <input type="text" id="addres"> -->
+             </div>
+            
+             <div class="name">
+             <label for="current addres">Current Addres</label>
+             <textarea id="addres">current addres</textarea>
+             <!-- <input type="text" id="addres"> -->
+             </div>
+            
+             <div class="name">
+             <label for="city">City</label>
+             <input type="text">
+             </div>
+         </div>
+            
+        <div class="exp">
+            <div class="experience">
+                <label for="experience">Experience</label>
+                <label for="yes">yes</label>
+                <input type="radio" id="yes" value="yes" name="yes">
+            </div>
+            <div class="experience">
+                <label for="no">no</label>  
+                <input type="radio" id="no" value="no" name="yes">
+            </div>
+         </div>
+            <br><br>
+        <div class="name">
+            <label for="details">Experience Details</label>
+            <textarea id="details"> experience details</textarea>
+            
+         </div>
+            <br><br><br>
+            
+        <div class="name" >
+            <label for="cv">Upload CV</label>
+            <input type="file" id="cv" accept="pdf,jpg">
+        </div>
+            
+            <div class="submit">
+                <div class="set">
+                <label for="reset">reset</label>
+                <input type="reset" id="reset" value="reset" >
+                </div>
+                <div class="set">
+                <label for="submit">Submit</label>
+                <input type="submit" id="submit" value="submit">
+                </div>
+            </div>
+        </form>
+    
+    </div>
+</body>
+
+</html>
