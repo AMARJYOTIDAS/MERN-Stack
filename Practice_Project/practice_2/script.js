@@ -13,10 +13,10 @@ demo.addEventListener("click",() =>{
     }
     console.log(curmode)
 })
-demo.addEventListener("click",() =>{
-demo.onclick = ()=>{
-    document.querySelector("#btn").style.backgroundColor = "light green"
-    // demo.innertext ="changed"
-}
-
-})
+// demo.addEventListener("click",() =>{
+// demo.onclick = ()=>{
+//     document.querySelector("body").style.backgroundColor = "light green"
+//     demo.innertext ="changed"
+// }
+// console.log(demo);
+// })
