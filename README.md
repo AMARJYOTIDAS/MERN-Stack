@@ -167,6 +167,11 @@ Methods of Array ->
 8. splice() - change original array (add,remove,replace)
 
 
+
+Spread operater :-
+  - the spread operater (...) in js is  used to expand element 
+
+
 function in js :-
 - it is a block of code that perform specific task , can be invoked or called whenever we needed 
 - ex.(in build function)
@@ -521,7 +526,8 @@ RFCE - React function component expression..
 Practice Qestion ..
 1. create a component with a button and input field. print "component rendered" in the connsole  
 
-useRef() hook in react..
+
+ useRef() hook in react..
 
 - useRef() is a react hook that let you store  VALUE THAT DOES NOT cause re-render when it changes..
 
@@ -687,3 +693,18 @@ Axios in react js ->
     - Return data in a clean json format 
     - mainly easier than fetch().
     
+
+imp. coding qestion for js interview..
+
+ 1. reverse  a string
+ 2. check palindrom
+ 3. find largest number
+ 4. find second  largest number
+ 5. remove duplicate from array
+ 6. coount frequency of character
+
+
+
+ call() , apply(), & bind() in javascript ->
+
+  - in javascript call(), appply(), & bind() are used to control the value of 'this' inside a function

@@ -1,15 +1,30 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style1.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style1.css" />
+  </head>
+  <body>
     <div id="box">this is a simple div</div>
-    <p class="para"> this is a paragraph that will be styled</p>
+
+    <p class="para1">this is a paragraph that will be styled</p>
+    <div class="img-div">
+      <img src="\Javasccript\images\img_1.jpeg" alt="img" />
+      <button id="btn3">p-img</button>
+      <button id="btn4">cng img</button>
+    </div>
+
+    <button id="btn1" onclick="changeText()">Click me</button>
+    <button id="btn2" onclick="changeColor()">Cng color</button>
+
+    <div class="inp-div">
+      <input id="input" type="text" placeholder="type text" />
+      <h2 id="result"></h2>
+      <button onclick="getInput()">Result</button>
+    </div>
+
     <script src="script1.js"></script>
-    
-</body>
+  </body>
 </html>

@@ -53,31 +53,31 @@
 // });
 // console.log(result);
 
-function createCounter() {
-  let count = 0;
-  return {
-    increment: function () {
-      count++;
-      console.log(count);
-    },
-    // getCount: function () {
-    //   return count;
-    // },
-  };
-}
+// function createCounter() {
+//   let count = 0;
+//   return {
+//     increment: function () {
+//       count++;
+//       console.log(count);
+//     },
+//     // getCount: function () {
+//     //   return count;
+//     // },
+//   };
+// }
 
-let counter = createCounter();
+// let counter = createCounter();
 
-counter.increment();
-counter.increment();
-// console.log(counter.getCount());
+// counter.increment();
+// counter.increment();
+// // console.log(counter.getCount());
 
-const num = [10, 20, 30, 40];
+// const num = [10, 20, 30, 40];
 
-const total = num.reduce((sum, num) => {
-  return sum + num;
-});
-console.log(total);
+// const total = num.reduce((sum, num) => {
+//   return sum + num;
+// });
+// console.log(total);
 
 const products = [
   { name: "laptop", price: 50000 },
@@ -87,3 +87,5 @@ const products = [
 
 const total = products;
 console.log(total.products.name);
+
+

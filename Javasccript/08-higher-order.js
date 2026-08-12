@@ -1,10 +1,3 @@
-function student(name, ...marks){
-    console.log(name)
-    console.log(marks)
-}
-
-student("malaya", 80,90)
-
 // example 1:-
 
 // const arr1 = [1,2,3]

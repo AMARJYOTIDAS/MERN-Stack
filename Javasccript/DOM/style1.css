@@ -1,7 +1,35 @@
-div{
-    height: 100px;
-    width: 100px;
-    background-color: red;
-    color: white;
-    border: 2px solid black;
+div {
+  height: 100px;
+  width: 100px;
+  background-color: red;
+  color: white;
+  border: 2px solid black;
+}
+button {
+  width: 5rem;
+  height: 20px;
+  color: black;
+  border-radius: 2dvh;
+  border: 2px solid black;
+  cursor: pointer;
+  /* position: fixed; */
+}
+p {
+  color: blue;
+  position: fixed;
+  display: none;
+  background-color: burlywood;
+  width: 12rem;
+}
+.img-div {
+  margin: auto;
+}
+img {
+  width: 20rem;
+  height: 20rem;
+}
+.inp-div {
+  bottom: 20rem;
+  width: 15rem;
+  height: 15rem;
 }
