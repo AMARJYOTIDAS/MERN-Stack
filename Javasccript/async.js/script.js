@@ -81,18 +81,32 @@
 //  })
 
 // async & await ===================================================
-function API(dataId) {
+// function API(dataId) {
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       console.log("wheather app", dataId);
+//       resolve("succses");
+//       reject("errer");
+//     }, 5000);
+//   });
+// }
+// async function getAllData() {
+//   await API(1);
+//   await API(2);
+//   await API(3);
+//   await API(4);
+// }
+
+function checkage(age) {
   return new Promise((resolve, reject) => {
-    setTimeout(() => {
-      console.log("wheather app", dataId);
-      resolve("succses");
-      reject("errer");
-    }, 5000);
+    if (age >= 18) {
+      resolve("you are eligible");
+    } else {
+      reject("you are not eligible");
+    }
   });
 }
-async function getAllData() {
-  await API(1);
-  await API(2);
-  await API(3);
-  await API(4);
-}
+
+checkage(20)
+  .then((message) => console.log(message))
+  .catch((error) => console.log(error));

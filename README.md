@@ -271,12 +271,10 @@ DOM manipulation :-
 3. selecting with tag -> document.getElementByTagname("p")
 
 4. Query selecter ->
+   - document.queryselecter("id/class/tag")
+   - document.querySelecterAll("id/clas/tag")
 
-
-    - document.queryselecter("id/class/tag")
-    - document.querySelecterAll("id/clas/tag")
-
-5.  Attributes ->
+5. Attributes ->
 
 - getAttribute(attr) -> to get the attribute value.
 - setattribute(attr, value) -> to set the attribute value.
@@ -389,6 +387,27 @@ statemet 1
 statemet 2
 statemet 3
 statemet 4
+
+Practice Question ->
+
+1.  create a promise that resolve with "data fetched successfully" after 2 second. then use .then() too print the result.
+
+concept -> promise, resolve, .then settimeout
+
+2.  create a function checkage(age) that returns a promise
+
+- if age is 18 or above, resolve with "you are eligibale"
+- otherwiswe, reject with "you are not eligibale".
+
+3. create a promise that randomlly either resolve or reject. then create an async function that uses:
+
+try {
+
+} catch (error) {
+
+}
+
+to handle the result
 
 APL handling/ fetch API
 
@@ -614,10 +633,8 @@ Practice Qestions ->
     - show it's width on screen
     - use useRef() to access DOM
 
-
-    use  -> ref.current.offsetWidth
-
-    5. create a component that  ->
+    use -> ref.current.offsetWidth
+    5. create a component that ->
        - display "first render " on first load
        - dispaly "updated" on sub
 
