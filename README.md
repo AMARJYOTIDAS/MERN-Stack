@@ -633,10 +633,9 @@ Practice Qestions ->
     - show it's width on screen
     - use useRef() to access DOM
 
-    use -> ref.current.offsetWidth
-    5. create a component that ->
-       - display "first render " on first load
-       - dispaly "updated" on sub
+    use -> ref.current.offsetWidth 5. create a component that ->
+    - display "first render " on first load
+    - dispaly "updated" on sub
 
 useMemo() Hooks in react js --
 
@@ -764,3 +763,85 @@ imp. coding qestion for js interview..
 call() , apply(), & bind() in javascript ->
 
 - in javascript call(), appply(), & bind() are used to control the value of 'this' inside a function
+
+NODE JS :-
+
+- Node js is the runtime enviroment of javascript.
+- the famouse scientist ryan dahl devlopment node javascript by combination of V8 engine & C++.
+- Node js is an event driven javascript runtime enviroment build on chrome's v8 engine that enables ,high performance server side application and API devlopment using javascript.
+
+Working of Node JS:-
+
+    - Node js is event driven asyncronous, enabling efficient handling of multiple request .
+
+Javascript engines -->
+
+    - chrome-> V8 engine
+    - firefox-> spider monkey
+    - safari -> mac os
+
+- you can run js outside of the browser.
+- you can create webservers in js language etc...
+
+Modules in Node JS :-
+
+    - A module in node js ia s reusable block of code that contains function ,objects,variables, etc..
+    - module help us organize code into separate file , making application easier to maintain and reuse.
+
+FS module(file system):-
+
+    - the fs module is a build in node js module used to create , read, update ,delete & manage files and folders.
+    - you don't need to install it just require the package and use it .
+    - these are two common ways to work with FS :-
+
+      1. Synchronous ->blocks the excutionn untill the operation finished.
+      2. Asyncronous -> doesn't block the rest of the program.
+
+    1. create/ write a file ->
+
+      - we can use writeFileSync() to create a new file or overwrite an existing file.
+
+    2. Read a file ->
+
+      - we can use readFileSync() to read the content of a file.
+
+    3. Add Data to an exsiting File->
+
+      - we can use appendFileSync() to add new content without deleting the exsiting contect.
+
+    4. Delete a file ->
+
+      - we can use unlinkSync to delete a file.
+
+    important FS methods ->
+
+      - writeFile()  -> create/write a file
+      - readFile()   -> Read a file
+      - appendFile() -> ann content to a file
+      - unlink()     -> Delete a file
+      - mkdir()      -> remove a folder
+      - rename()     -> rename a file
+      - existsSync() -> check whether a file or folder exsits
+
+URL's :--
+
+- URL stands for uniform resource locator.
+
+ex.
+
+    ex- https://www.webbocket.com/
+
+    - in this above example
+
+       httds -> protocol layer (hyper text transfor protocol secure)
+       www ->  web address
+       webbocket.com -> domain name
+       / -> path /home route
+       /about -> about us page
+       /contact -> contactus page
+       /product/laptops -> nested path
+       /product/mobile -> nested path
+
+       Query parametor :-
+
+         https://www.google.com/search?q=javascript+interview+questions&oq=javascript+int&gs_lcrp=EgZjaHJvbWUqCggAEAAYsQMYgAQyCggAEAAYsQMYgAQyBggBEEUYOTIHCAIQABiABDIHCAMQABiABDIHCAQQABiABDIHCAUQABiABDIHCAYQABiABDIHCAcQABiABDIHCAgQABiABDIHCAkQABiABNIBCjY3MzAxajBqMTWoAgiwAgHxBerQo3RYTrhC&sourceid=chrome&source=chrome.rb&ie=UTF-8
