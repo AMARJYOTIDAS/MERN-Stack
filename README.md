@@ -843,5 +843,52 @@ ex.
        /product/mobile -> nested path
 
        Query parametor :-
-
+        Google:-
          https://www.google.com/search?q=javascript+interview+questions&oq=javascript+int&gs_lcrp=EgZjaHJvbWUqCggAEAAYsQMYgAQyCggAEAAYsQMYgAQyBggBEEUYOTIHCAIQABiABDIHCAMQABiABDIHCAQQABiABDIHCAUQABiABDIHCAYQABiABDIHCAcQABiABDIHCAgQABiABDIHCAkQABiABNIBCjY3MzAxajBqMTWoAgiwAgHxBerQo3RYTrhC&sourceid=chrome&source=chrome.rb&ie=UTF-8
+
+Practice Question :-
+
+    1. calculate total price :-
+
+      - create a node,js server that two query parameter.
+         - price
+         - quantity
+      when the user open :-
+
+         http://localhost:3000/order?price=500&quanty=3
+
+      the server should display :
+
+        price:3
+        Quantity:
+
+HTTP Method :-
+
+- http methods are tell the serverr what the client wants to do with a resource .
+  ex.
+
+methods meaning example
+
+GET get/read data get all users
+POST create new data create a new user.
+PUT replace/update data update complete user
+PATCH partially update data update only user's name
+DELETE delete data delete a user
+
+GET method :-
+
+- the get method is uesd to retrive the data from the server.
+
+POST is used to create new data or send to the server..
+
+PUT method :-
+
+- put is geenrally used to replace/update an existing data.
+
+PATCH method :-
+
+- patch method used when you want to update only a part of the resource.
+
+DELETE method :-
+
+- delete method is used to remove any resouce.
