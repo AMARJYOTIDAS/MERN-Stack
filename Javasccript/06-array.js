@@ -79,13 +79,27 @@
 // });
 // console.log(total);
 
-const products = [
-  { name: "laptop", price: 50000 },
-  { name: "mouse", price: 1000 },
-  { name: "keyboard", price: 2000 },
-];
+// const products = [
+//   { name: "laptop", price: 50000 },
+//   { name: "mouse", price: 1000 },
+//   { name: "keyboard", price: 2000 },
+// ];
 
-const total = products;
-console.log(total.products.name);
+// const total = products;
+// console.log(total.products.name);
 
+// let arr = [1, 6, 8, 9, 5];
+
+// let arr2 = arr.map((i) => {
+//   return i * i;
+// });
+
+// console.log(arr);
+// console.log(arr2);
+let arr = [1, 6, 8, 9, 5];
+let arr3 = arr.reduce((total, i) => {
+  return total + i;
+});
+console.log(arr3);
+// it gives single value
 

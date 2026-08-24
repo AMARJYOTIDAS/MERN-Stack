@@ -325,6 +325,31 @@ Q. create a toggle button that changes the screen to dark mode when clicked & li
 
 sync in javascript :-
 
+Hosting :-
+
+- Hosting is a javascript behaviour of processing declarations before executinng the code
+
+    ex.- var.
+      console.log(a);
+      var a = 10;
+      output = undefined.
+
+    ex - let
+
+        console.log(a)
+        let a = 10;
+        o - refrence error.
+
+    ex - const;
+
+        console.log(a);
+          const a = 10;
+        output - reference error.
+
+    Shallow copy
+
+    - a shallow copy copies the outer object but nested object are still share the same references.
+
 Synchronous -
 
 - synchronous means the code runs in a particular sequence of instruction given in s program
@@ -892,3 +917,23 @@ PATCH method :-
 DELETE method :-
 
 - delete method is used to remove any resouce.
+
+Express js :-
+
+- express js is alight weight and popular web framework for node.js.
+- it makes it much easier to build web server , REST API's , route & backend Application..
+
+- without express.js, we have to use npde.js build -in http modulle and write a lot of routing logics.
+
+Versioning of Node.js ---
+
+- node is itself has version like 18, 20, 22 24, 26 etc .
+- package such as express have version like 4, 2, 21, 5.1.0 etc .
+-
+
+Node.js Version -> v22.14.0 in that version..
+
+- 22 -> major - a major version an contain breaking changes.
+- 14 -> minor - usually adds new feature while maintaining compatibility.
+- 0 -> patch - usually contain bug fixes & security fixes.
+

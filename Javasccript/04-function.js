@@ -12,7 +12,7 @@
 //     let count = 0;
 //     for(const i of str){
 //         if(
-//             i ==="a" || i ==="e"||i ==="i"||i==="o"||i==="u" 
+//             i ==="a" || i ==="e"||i ==="i"||i==="o"||i==="u"
 //         )
 //     {
 //         count++;
@@ -28,7 +28,7 @@
 //     let count = 0;
 //     for(const i of str){
 //         if(
-//             i ==="a" || i ==="e"||i ==="i"||i==="o"||i==="u" 
+//             i ==="a" || i ==="e"||i ==="i"||i==="o"||i==="u"
 //         )
 //         {
 //             count++;
@@ -36,8 +36,7 @@
 //     }
 //     console.log(count)
 // }
-// Myvowel("helloworld");  
-
+// Myvowel("helloworld");
 
 // let arr = [10,20,42,30,56,11, 25 , 97 , 66 , 74]
 // function greatestElement(arr){
@@ -95,14 +94,12 @@
 // }
 // console.log(removeDuplicates([1, 2, 2, 3, 4, 4, 5]));
 
-
 // [1, 2, 3, 4, 5]
 // function myMyfunction(){
 //     console.log("today is friday");
 
 // }
 // myMyfunction()
-
 
 // let arr = [1,2,3,6,4,5,8,9,77,]
 // arr.forEach(function printval(val){
@@ -113,14 +110,13 @@
 //     console.log(val)
 // })
 
-// ARRAY FILTER METHOD 
+// ARRAY FILTER METHOD
 // arr.filter((val)=>{
 //     if(val%2===0){
 //         console.log(val)
 //     }
 // })
 
- 
 // ARRAY MAP METHOD
 //  let arr = [1,2,3,6,4,5,8,9,77,]
 //    let newarr = arr.map((val)=>{
@@ -131,15 +127,13 @@
 // console.log(arr)
 // console.log(newarr)
 
-
 // let arr = [1,2,3,4,5,6,7,8,9]
 // let newarr = arr.map((a) =>{
 //     return a%2===0;
 // })
 // console.log(arr);
-//   console.log(newarr); 
+//   console.log(newarr);
 //   it returns answer in true or false
-
 
 // let marks = [95,56,86,64,34,25,78]
 // let newmarks = marks.filter((val)=>{
@@ -148,5 +142,33 @@
 // console.log(marks);
 // console.log(newmarks);
 
+// shallow copy
+// const xxx = {
+//   name: "xyy",
+//   address: {
+//     city: "cuttack",
+//   },
+// };
+// const xyx = { ...xxx };
+// xyx.address.city = "kendrapada";
+// console.log(xxx.address.city);
+// xyx.name = "hari";
+// console.log(xxx.name);
 
+// Deep copy
+// Deep creates completly independent copys inclluding the nested objecct
+const original = {
+  name: "starc",
+  address: {
+    city: "cuttack",
+  },
+};
 
+let duplicate = { original };
+console.log((duplicate.name = "cpt america"));
+
+const copy = structuredClone(original);
+
+// copy.address.city = "kendrapada";
+// console.log(xxx.address.city);
+// console.log((copy.name = "dhoni"));
