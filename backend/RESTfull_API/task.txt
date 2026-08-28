@@ -1,6 +1,6 @@
 REST API -> JSON 
 
-GET /user -> List all users
+GET /user -> Html document
 
 GET /users/1 -> get the user with id-1
 GET /users/2 -> get the usre with id-2
