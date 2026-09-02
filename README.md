@@ -329,26 +329,25 @@ Hosting :-
 
 - Hosting is a javascript behaviour of processing declarations before executinng the code
 
-    ex.- var.
-      console.log(a);
-      var a = 10;
-      output = undefined.
+  ex.- var.
+  console.log(a);
+  var a = 10;
+  output = undefined.
 
-    ex - let
+  ex - let
 
         console.log(a)
         let a = 10;
         o - refrence error.
 
-    ex - const;
+  ex - const;
 
         console.log(a);
           const a = 10;
         output - reference error.
 
-    Shallow copy
-
-    - a shallow copy copies the outer object but nested object are still share the same references.
+  Shallow copy
+  - a shallow copy copies the outer object but nested object are still share the same references.
 
 Synchronous -
 
@@ -937,3 +936,20 @@ Node.js Version -> v22.14.0 in that version..
 - 14 -> minor - usually adds new feature while maintaining compatibility.
 - 0 -> patch - usually contain bug fixes & security fixes.
 
+MONGODB -->
+
+- MongoDB is a nosql (non-relational ) database designed to store, manage & retrive large amounts of data in a flexible way..
+- unlike traditional relational database (such as MySQL or PostgreSQL ) that store data in rows and tables mongoDB store data as documents in collections..
+
+How MongoDB works :-
+
+- MongoDB stores data in JSON- like documents (specially BSON, binary JSON) making it easy for developers to work with data in modern programming languages
+
+Commmon kkey words are ->
+
+- mongosh.
+- show dbs.
+- use <db_name>
+- show collections.
+- db.coll.find().
+- db. coll.insert()
