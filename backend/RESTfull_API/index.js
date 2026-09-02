@@ -3,6 +3,7 @@ const express = require("express");
 // const users = require("./MOCK_DATA.json");
 const mongoose = require("mongoose");
 const app = express();
+const cors = require("cors");
 const fs = require("fs");
 
 // Middleware - plugin that has access to the request and response objects,
