@@ -953,3 +953,27 @@ Commmon kkey words are ->
 - show collections.
 - db.coll.find().
 - db. coll.insert()
+  Task -> URL Shortner
+
+Design a URL shortner service that takes in a valid URL and retursn a shortner URL, redirecting the user to the previouslly provided URL.
+
+Also , keep track of total visit/clicks on the URL.
+
+Routes :-
+
+POST /URL -> generates a new URL and return the shortend URL.
+
+GET /:id -> Redirects the user to the original URL
+
+GET /URL/analytics/:id -> return the clicks for the provided short ID.
+MVC Pattern in Backend :-
+
+- MVC stands for Model-View-Controller.
+- it is a software architecture pattern used to organize backend applications into separate responsibility, making the code easier to develop, maintain, test & scale.
+
+client -> Routes -> Controller -> Model -> Database
+
+1. Model -> the model handles the application's data & database structure.
+2. Controller -> the controller contain the business logic.
+3. View -> the view is responsible for what is presented to the user like HTML or React js.
+4. Routes -> Routes are not technically one of the three MVC components but they connect the request to the controller.

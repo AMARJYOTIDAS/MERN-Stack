@@ -1,9 +1,9 @@
-function student(name, ...marks){
-    console.log(name)
-    console.log(marks)
+function student(name, ...marks) {
+  console.log(name);
+  console.log(marks);
 }
 
-student("malaya", 80,90)
+student("malaya", 80, 90);
 
 // example 1:-
 

@@ -96,10 +96,16 @@
 
 // console.log(arr);
 // console.log(arr2);
-let arr = [1, 6, 8, 9, 5];
-let arr3 = arr.reduce((total, i) => {
-  return total + i;
-});
-console.log(arr3);
-// it gives single value
+// let arr = [1, 6, 8, 9, 5];
+// let arr3 = arr.reduce((total, i) => {
+//   return total + i;
+// });
+// console.log(arr3);
+// // it gives single value
 
+console.log([] + []);
+console.log({} + []);
+console.log([1, 2, 3] + [1, 5, 9]);
+console.log(typeof null);
+console.log(typeof undefined);
+console.log([123, 2, 5] + "hhary");
