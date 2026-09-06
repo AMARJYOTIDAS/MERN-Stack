@@ -1,9 +1,9 @@
-function student(name, ...marks) {
-  console.log(name);
-  console.log(marks);
-}
+// function student(name, ...marks) {
+//   console.log(name);
+//   console.log(marks);
+// }
 
-student("malaya", 80, 90);
+// student("malaya", 80, 90);
 
 // example 1:-
 
@@ -15,10 +15,10 @@ student("malaya", 80, 90);
 
 // example -2 -> (copy of an array)
 
-const original = [10, 20, 30];
-const copy = [...original];
-console.log(copy);
-console.log(original);
+// const original = [10, 20, 30];
+// const copy = [...original];
+// console.log(copy);
+// console.log(original);
 
 // example 3:- (spread in an object)
 

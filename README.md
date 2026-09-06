@@ -955,6 +955,7 @@ Commmon kkey words are ->
 - db. coll.insert()
   Task -> URL Shortner
 
+
 Design a URL shortner service that takes in a valid URL and retursn a shortner URL, redirecting the user to the previouslly provided URL.
 
 Also , keep track of total visit/clicks on the URL.
@@ -968,7 +969,7 @@ GET /:id -> Redirects the user to the original URL
 GET /URL/analytics/:id -> return the clicks for the provided short ID.
 MVC Pattern in Backend :-
 
-- MVC stands for Model-View-Controller.
+- MVC stands for (Model-View-Controller.)
 - it is a software architecture pattern used to organize backend applications into separate responsibility, making the code easier to develop, maintain, test & scale.
 
 client -> Routes -> Controller -> Model -> Database
