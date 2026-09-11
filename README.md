@@ -955,7 +955,6 @@ Commmon kkey words are ->
 - db. coll.insert()
   Task -> URL Shortner
 
-
 Design a URL shortner service that takes in a valid URL and retursn a shortner URL, redirecting the user to the previouslly provided URL.
 
 Also , keep track of total visit/clicks on the URL.
