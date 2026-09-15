@@ -1,4 +1,4 @@
-// require("dotenv").config();
+require("dotenv").config();
 
 const express = require("express");
 
@@ -8,9 +8,10 @@ const { connectToMongoDB } = require("./connect");
 const app = express();
 app.use(express.json());
 
-const PORT = 8001;
+const PORT = process.env.PORT;
+const dbURL = process.env.dbURL;
 
-connectToMongoDB("mongodb://127.0.0.1:27017/short-url").then(() => {
+connectToMongoDB(dbURL).then(() => {
   console.log("mongodb connected succsessfuly");
 
   // const mongoose = require("mongoose");
