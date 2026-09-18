@@ -3,9 +3,9 @@
 // console.log(typeof(age))
 
 // bigint
-// var a = BigInt("645") 
+// var a = BigInt("645")
 // console.log(a) n is like suffix of big integer value
-// console.log(typeof(a))   
+// console.log(typeof(a))
 
 // String
 // let a = "hello world"
@@ -29,18 +29,10 @@
 // console.log(y)
 // console.log(y.description)
 // console.log(typeof(y))
-// symbol  are unique 
+// symbol  are unique
 // it is used to create hidden or private properties
 // it is useful in large size application
 
-const sym1 = Symbol("id")
-const sym2 = sym1
-console.log(sym1 == sym2)
-
-
-
-
-
-
-
-
+const sym1 = Symbol("id");
+const sym2 = sym1;
+console.log(sym1 == sym2);
