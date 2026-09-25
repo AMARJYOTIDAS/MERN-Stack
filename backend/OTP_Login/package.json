@@ -1,5 +1,5 @@
 {
-  "name": "http-method",
+  "name": "otp_login",
   "version": "1.0.0",
   "description": "",
   "license": "ISC",
@@ -7,9 +7,10 @@
   "type": "commonjs",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index.js"
+    "start": "nodemon server.js"
   },
   "dependencies": {
+    "express": "^5.2.1",
     "nodemon": "^3.1.14"
   }
 }

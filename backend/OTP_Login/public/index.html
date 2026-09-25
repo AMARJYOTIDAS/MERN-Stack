@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OTP Login</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="login-container">
+      <h1>Welcome back</h1>
+      <p class="subtitle">Login Using OTP</p>
+      <!-- phone section  -->
+      <div class="phone-section">
+        <label>Phone Number</label>
+        <input type="text" id="phone" placeholder="Enter Phone Number" />
+        <button onclick="sendOTP()">Send OTP</button>
+      </div>
+      <!-- otp section  -->
+      <div id="otp-section">
+        <label>Enter OTP</label>
+        <input type="text" id="otp" placeholder="Enter 6 digit OTP" />
+        <button onclick="verifyOTP()">Verify OTP</button>
+      </div>
+      <p id="message"></p>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

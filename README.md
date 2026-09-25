@@ -977,3 +977,38 @@ client -> Routes -> Controller -> Model -> Database
 2. Controller -> the controller contain the business logic.
 3. View -> the view is responsible for what is presented to the user like HTML or React js.
 4. Routes -> Routes are not technically one of the three MVC components but they connect the request to the controller.
+
+Server side Rendering with EJS :-
+
+- the ser
+
+Authentication Vs Authorization in Express.js..
+
+- these two concepts are very important when building a backend/API with node js + express.js..
+
+1. Autentication - "who are you"
+
+- autentication means verifying the identify of a user.
+
+ex-- user enters email + password -> server checks them -> user is identified as NIT..
+
+Common methods of Authentication
+
+- email + password
+- OTP
+- jwt Token
+- season based login
+
+2. Authorization - " what are you allowed to do ? "
+
+- Authorization happen after authentication ..
+- it determine what an authentication user is allowed to access or perform .
+  ex --- NIT logged in , but only an admin can delete user.
+
+- simply we can say that ->
+  Authentication -> who are you ..
+  Authorization -> what can you access.. ?
+
+EX -- (imagin your NIT office){
+you enterd the office with id card system -> (Authentication (yes / no)) ->
+}
