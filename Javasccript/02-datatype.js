@@ -33,6 +33,19 @@
 // it is used to create hidden or private properties
 // it is useful in large size application
 
-const sym1 = Symbol("id");
-const sym2 = sym1;
-console.log(sym1 == sym2);
+// const sym1 = Symbol("id");
+// const sym2 = sym1;
+// console.log(sym1 == sym2);
+
+// let a = 0;
+// let b = null;
+// console.log(a === b);
+// console.log(a == b);
+
+// console.log({} + []);
+// console.log([1, 2, 3] + [1, 5, 9]);
+// console.log(typeof null);
+// console.log(typeof undefined);
+// console.log([123, 2, 5] + "hhary");
+console.log("harry" + 13);
+console.log(typeof ([] + []));

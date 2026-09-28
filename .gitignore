@@ -1,2 +1,4 @@
 node_modules/
 .env/
+BlogApp_With_AppWrite/frontend/src/.env
+BlogApp_With_AppWrite/frontend/src/.env.sample
