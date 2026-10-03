@@ -1,7 +1,7 @@
 import { useReducer } from "react";
 import config from "../config/config";
 
-import { Client, account, Id } from "appwrite";
+import { Client, Account, ID } from "appwrite";
 
 export class AuthService {
   Client = new Client();
@@ -11,13 +11,13 @@ export class AuthService {
     this.Client.setEndpoint(config.appwriteURL).setProject(
       config.appwriteProjectID,
     );
-    this.account = new account(this.Client);
+    this.account = new Account(this.Client);
   }
 
   async createAccount({ email, password, name }) {
     try {
       const userAccount = await this.account.create(
-        Id.unique(),
+        ID.unique(),
         email,
         password,
         name,
@@ -60,4 +60,4 @@ export class AuthService {
 
 const authService = new AuthService();
 
-export default AuthService;
+export default authService;
