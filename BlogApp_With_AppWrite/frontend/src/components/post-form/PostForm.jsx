@@ -3,7 +3,7 @@ import { useEffect } from "react";
 import { useForm } from "react-hook-form";
 import { Button, Input, Select, RTE } from "../index";
 import appwriteService from "../../Appwrite/configure";
-import { useNavigate } from "react-router-dom";
+import { generatePath, useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
 import { useCallback } from "react";
 
@@ -26,11 +26,11 @@ function PostForm({ post }) {
         : null;
 
       if (file) {
-        appwriteService.deleteFile(post.featuredimage);
+        appwriteService.deleteFile(post.featuredImage);
       }
       const dbPost = await appwriteService.updatePost(post.$id, {
         ...data,
-        featuredimage: file ? file.$id : undefined,
+        featuredImage: file ? file.$id : undefined,
       });
       if (dbPost) {
         navigate(`/post/${dbPost.$id}`);
@@ -39,7 +39,7 @@ function PostForm({ post }) {
       const file = await appwriteService.uploadFile(data.image[0]);
       if (file) {
         const field = file.$id;
-        data.featuredimage = field;
+        data.featuredImage = field;
         const dbPost = await appwriteService.createPost({
           ...data,
           userId: userData.$id,
@@ -70,7 +70,64 @@ function PostForm({ post }) {
       subscription.unsubscribe();
     };
   }, [watch, slugTransform, setValue]);
-  return <div></div>;
+  return;
 }
-
+<form onSubmit={handleSubmit(submit)} className="flex flex-wrap">
+  <div className="w-2/3 px-2">
+    <input
+      label="Title"
+      placeholder="Title"
+      className="mb-4"
+      {...register("title", { required: true })}
+    />
+    <input
+      label="Slug"
+      placeholder="Slug"
+      className="mb-4"
+      {...register("slug", { required: true })}
+      onInput={(e) => {
+        setValue("slug", slugTransform(e.currentTarget.value), {
+          shouldValidateL: true,
+        });
+      }}
+    />
+    <RTE
+      label="Content :"
+      name="content"
+      control={control}
+      defaultValue={getValues("content")}
+    />
+  </div>
+  <div className="w-1/3 px-2">
+    <input
+      label="Featured image"
+      type="file"
+      className="mb-4"
+      accept="image/png, image/jpg, image/jpeg, image/gif"
+      {...register("image", { required: !post })}
+    />
+    {post && (
+      <div className="w-full mb-4">
+        <img
+          src={appwriteService.getFilePreview(post.getfeaturedImage)}
+          alt={post.title}
+          className="rounded-lg"
+        />
+      </div>
+    )}
+    <select
+      options={["active", "inactive"]}
+      label="Status"
+      className="mb-4"
+      {...register("status", { required: true })}
+    />
+    <Button
+      type="submit"
+      bgColor={post ? "bg-green-500" : undefined}
+      className="w-full"
+    >
+      {post ? "update" : "submit"}
+    </Button>
+  </div>
+</form>;
 export default PostForm;
