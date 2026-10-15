@@ -3,14 +3,21 @@ const fs = require("fs");
 
 const server = http.createServer((req, res) => {
   const log = `${Date.now()}: ${req.url}:from server \n`;
+  const url = require("url");
+  const myUrl = url.parse(req.url, true);
   fs.appendFile("./log.txt", log, (err, data) => {
-    switch (req.url) {
+    switch (myUrl.pathname) {
       case "/":
         res.end("this is from home page");
         break;
       case "/about":
-        res.end("this is from aboutpage");
+        const qp = myUrl.query.myname;
+        res.end("i am  amar");
+        // res.end("this is from aboutpage");
         break;
+      case "/search":
+        const sh = myUrl.query.sch;
+        res.end("this search from amar");
       default:
         res.end("404 not found");
     }

@@ -11,3 +11,10 @@ function now() { [native code] }:from server
 1789993006090:from server 
 1789993093033: /:from server 
 1789993143309: /about:from server 
+1792040930994: /about/myname:from server 
+1792041035641: /about?myname:from server 
+1792041304743: /about?search:from server 
+1792041393859: /search/search:from server 
+1792041433947: /search/search:from server 
+1792041468117: /search/search:from server 
+1792041497867: /search/sch:from server 
