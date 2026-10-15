@@ -1,4 +1,4 @@
-import config from "../../../Backend/config/config";
+import config from "../config/config";
 
 import { Client, ID, Database, Storage, Query } from "appwrite";
 
