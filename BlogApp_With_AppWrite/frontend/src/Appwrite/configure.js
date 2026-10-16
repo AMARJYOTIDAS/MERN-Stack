@@ -1,21 +1,21 @@
 import config from "../config/config";
 
-import { Client, ID, Database, Storage, Query } from "appwrite";
+import { Client, ID, Databases, Storage, Query } from "appwrite";
 
 export class Service {
   client = new Client();
-  database;
+  databases;
   bucket;
   constructer() {
     this.client
       .setEndpoint(config.appwriteURL)
       .setProject(config.appwriteProjectID);
-    this.database = new Database(this.client);
+    this.databases = new Databases(this.client);
     this.bucket = new Storage(this.client);
   }
   async createPost({ title, slug, content, featuredImage, status, userId }) {
     try {
-      return await this.database.createDocument(
+      return await this.databases.createDocument(
         config.appwriteDBID,
         config.appwriteCollectionID,
         slug,

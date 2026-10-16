@@ -7,6 +7,7 @@ import store from "./Store/store.js";
 import { createBrowserRouter } from "react-router-dom";
 import Home from "./pages/Home.jsx";
 import Login from "./components/Login.jsx";
+import { AuthLayout, SignUp } from "./components/index.js";
 
 const router = createBrowserRouter([
   {
@@ -20,8 +21,49 @@ const router = createBrowserRouter([
       {
         path: "Login",
         element: (
-          
-        )
+          <AuthLayout authentication={false}>
+            <Login />
+          </AuthLayout>
+        ),
+      },
+      {
+        path: "/signup",
+        element: (
+          <AuthLayout authentication={false}>
+            <SignUp />
+          </AuthLayout>
+        ),
+      },
+      {
+        path: "/all-posts",
+        element: (
+          <AuthLayout authentication>
+            {/* //authentication={true} */}
+            <AllPosts />
+          </AuthLayout>
+        ),
+      },
+      {
+        path: "/add-posts",
+        element: (
+          <AuthLayout authentication>
+            {/* //authentication={true} */}
+            <AddPost />
+          </AuthLayout>
+        ),
+      },
+      {
+        path: "/edit-post/:slug",
+        element: (
+          <AuthLayout authentication>
+            {/* //authentication={true} */}
+            <EditPost />
+          </AuthLayout>
+        ),
+      },
+      {
+        path: "/post/:slug",
+        element: <Post />,
       },
     ],
   },
